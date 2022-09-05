@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     ExpansionTile(
                       title: const Text(
-                        "data",
+                        "Joke",
                         textAlign: TextAlign.center,
                       ),
                       children: [
@@ -38,6 +38,14 @@ class HomePage extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           child: Text(
                             state.joke.setup,
+                            style: const TextStyle(fontSize: 20),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            state.joke.delivery,
                             style: const TextStyle(fontSize: 20),
                             textAlign: TextAlign.center,
                           ),
