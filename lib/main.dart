@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       // Untuk menyediakan JokeRepository secara global,
       // kita harus membungkus halaman Home() di sekitar RepositoryProvider di file main.dart.
+      // disini kita definisikan repository provider
       home: RepositoryProvider(
         create: (context) => Repository(),
         child: const HomePage(),
