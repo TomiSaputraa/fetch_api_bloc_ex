@@ -16,6 +16,7 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("The Joke App"),
         ),
+        // bloc builder digunakan didalam body widget yang akan di build
         body: BlocBuilder<JokeBloc, JokeState>(
           builder: (context, state) {
             if (state is JokeLoadingState) {
