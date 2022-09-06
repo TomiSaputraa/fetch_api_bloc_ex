@@ -7,15 +7,15 @@ part of 'joke_model.dart';
 // **************************************************************************
 
 Joke _$JokeFromJson(Map<String, dynamic> json) => Joke(
-      error: json['error'] as bool,
-      category: json['category'] as String,
-      type: json['type'] as String,
-      setup: json['setup'] as String,
-      delivery: json['delivery'] as String,
-      flags: Flags.fromJson(json['flags'] as Map<String, dynamic>),
-      id: json['id'] as int,
-      safe: json['safe'] as bool,
-      lang: json['lang'] as String,
+      error: json['error'] as bool?,
+      category: json['category'] as String?,
+      type: json['type'] as String?,
+      setup: json['setup'] as String?,
+      delivery: json['delivery'] as String?,
+      flags: Flags.fromJson(json['flags'] as Map<String, dynamic>?),
+      id: json['id'] as int?,
+      safe: json['safe'] as bool?,
+      lang: json['lang'] as String?,
     );
 
 Map<String, dynamic> _$JokeToJson(Joke instance) => <String, dynamic>{
@@ -31,12 +31,12 @@ Map<String, dynamic> _$JokeToJson(Joke instance) => <String, dynamic>{
     };
 
 Flags _$FlagsFromJson(Map<String, dynamic> json) => Flags(
-      nsfw: json['nsfw'] as bool,
-      religious: json['religious'] as bool,
-      political: json['political'] as bool,
-      racist: json['racist'] as bool,
-      sexist: json['sexist'] as bool,
-      explicit: json['explicit'] as bool,
+      nsfw: json['nsfw'] as bool?,
+      religious: json['religious'] as bool?,
+      political: json['political'] as bool?,
+      racist: json['racist'] as bool?,
+      sexist: json['sexist'] as bool?,
+      explicit: json['explicit'] as bool?,
     );
 
 Map<String, dynamic> _$FlagsToJson(Flags instance) => <String, dynamic>{

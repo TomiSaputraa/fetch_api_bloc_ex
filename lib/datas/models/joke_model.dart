@@ -16,17 +16,17 @@ class Joke {
     required this.lang,
   });
 
-  final bool error;
-  final String category;
-  final String type;
-  final String setup;
-  final String delivery;
+  final bool? error;
+  final String? category;
+  final String? type;
+  final String? setup;
+  final String? delivery;
   final Flags flags;
-  final int id;
-  final bool safe;
-  final String lang;
+  final int? id;
+  final bool? safe;
+  final String? lang;
 
-  factory Joke.fromJson(Map<String, dynamic> json) => _$JokeFromJson(json);
+  factory Joke.fromJson(Map<String, dynamic>? json) => _$JokeFromJson(json!);
 
   Map<String, dynamic> toJson() => _$JokeToJson(this);
 }
@@ -42,14 +42,14 @@ class Flags {
     required this.explicit,
   });
 
-  final bool nsfw;
-  final bool religious;
-  final bool political;
-  final bool racist;
-  final bool sexist;
-  final bool explicit;
+  final bool? nsfw;
+  final bool? religious;
+  final bool? political;
+  final bool? racist;
+  final bool? sexist;
+  final bool? explicit;
 
-  factory Flags.fromJson(Map<String, dynamic> json) => _$FlagsFromJson(json);
+  factory Flags.fromJson(Map<String, dynamic>? json) => _$FlagsFromJson(json!);
 
   Map<String, dynamic> toJson() => _$FlagsToJson(this);
 }
