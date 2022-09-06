@@ -35,17 +35,21 @@ class HomePage extends StatelessWidget {
                       ),
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Text(
-                            state.joke.setup,
+                            state.joke.setup == null
+                                ? 'Data gagal di Load'
+                                : state.joke.setup.toString(),
                             style: const TextStyle(fontSize: 20),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Text(
-                            state.joke.delivery,
+                            state.joke.delivery == null
+                                ? 'Coba lagi...'
+                                : state.joke.delivery.toString(),
                             style: const TextStyle(fontSize: 20),
                             textAlign: TextAlign.center,
                           ),
