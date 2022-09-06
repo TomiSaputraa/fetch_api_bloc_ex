@@ -3,6 +3,9 @@ part of 'joke_bloc.dart';
 @immutable
 abstract class JokeState extends Equatable {}
 
+// event adalah input dari ui
+// state adalah output ke ui
+
 // Hanya akan ada tiga status dalam kasus ini: JokeLoadingState, JokeLoadedState, dan JokeErrorState.
 // Saat Joke sedang diambil, 'JokeLoadingState' digunakan untuk menampilkan Indikator progress.
 class JokeLoadingState extends JokeState {
