@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // bloc provider digunakan di dalam class view
     return BlocProvider(
       create: (context) => JokeBloc(
         RepositoryProvider.of<Repository>(context),
