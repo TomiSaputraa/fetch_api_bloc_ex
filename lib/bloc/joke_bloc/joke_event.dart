@@ -5,7 +5,10 @@ abstract class JokeEvent extends Equatable {
   const JokeEvent();
 }
 
-// Event tidak lain adalah tindakan yang tidak beda (klik tombol, kirim, dll) yang dipicu/trigger oleh
+// event adalah input dari ui
+// state adalah output ke ui
+
+// Event tidak lain adalah tindakan seperti (klik tombol, kirim, dll) yang dipicu/trigger oleh
 // pengguna dari UI. berisi informasi tentang tindakan dan memberikannya ke Blok untuk ditangani.
 // Event saat menekan tombol load new joke di views
 // Dalam kasus ini, kita hanya memiliki satu klik tombol, yaitu Load New Joke
